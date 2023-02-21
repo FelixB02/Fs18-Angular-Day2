@@ -33,7 +33,7 @@ html {
 #submit {
     display: flex;
     justify-content: center;
-    margin: 1vh;
+    margin-top: 1vh;
 }
 
 #cont {
@@ -42,11 +42,14 @@ html {
     margin-top: 4vh;
     border: 1px solid black;
     margin-bottom: 2vh;
-    padding-right: 11.5%;
 }
 
 #content {
     background-color: floralwhite;
     min-height: 90vh;
     padding-bottom: 2vh;
+}
+
+.inputs {
+    padding-right: 11.5%;
 }
