@@ -1,0 +1,118 @@
+#content {
+    background-color: floralwhite;
+    min-height: 90vh;
+    padding-bottom: 2vh;
+}
+
+#subscribe {
+    background-color: white;
+    padding: 5vh;
+    margin-top: 7vh;
+    border: 1px solid black;
+    margin-right: 20vh;
+}
+
+.inputfield {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+}
+
+#bothforms {
+    display: flex;
+    justify-content: space-around;
+}
+
+#concerns {
+    background-color: white;
+    padding: 5vh;
+    margin-top: 7vh;
+    border: 1px solid black;
+    margin-left: 20vh;
+}
+
+.label1 {
+    padding-bottom: 15vh;
+}
+
+@media screen and (max-width: 1050px) {
+    #bothforms {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #subscribe {
+        width: 40%;
+        margin: 2vh auto;
+    }
+    #concerns {
+        width: 40%;
+        margin: 2vh auto;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    #bothforms {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #subscribe {
+        width: 50%;
+        margin: 2vh auto;
+    }
+    #concerns {
+        width: 50%;
+        margin: 2vh auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #bothforms {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #subscribe {
+        width: 60%;
+        margin: 2vh auto;
+    }
+    #concerns {
+        width: 60%;
+        margin: 2vh auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #bothforms {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #subscribe {
+        width: 70%;
+        margin: 2vh auto;
+    }
+    #concerns {
+        width: 70%;
+        margin: 2vh auto;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width: 480px) {
+    #bothforms {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #subscribe {
+        width: 100%;
+        margin: 2vh auto;
+    }
+    #concerns {
+        width: 100%;
+        margin: 2vh auto;
+    }
+}

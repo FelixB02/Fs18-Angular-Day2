@@ -1,0 +1,62 @@
+<div id="content">
+    <div id="bothforms">
+        <div id="concerns">
+            <h3 style="text-align: center; margin-bottom: 3vh;"> Concerns Form</h3>
+            <form [formGroup]="concern" (ngSubmit)="printMessage2()">
+                <div class="inputfield">
+                    <label for="fullname">Full Name:&nbsp;&nbsp; </label>
+                    <input id="fullname" type="text" formControlName="fullname">
+                </div>
+                <div class="inputfield">
+                    <label for="emailadress">Emailadress:&nbsp;&nbsp; </label>
+                    <input id="emailadress" type="text" formControlName="emailadress">
+                </div>
+                <div class="inputfield">
+                    <label class="label1" for="concern">Concerns:&nbsp;&nbsp; </label>
+                    <textarea rows="7" cols="23" id="concern" type="text" formControlName="concern"> </textarea>
+                </div>
+                <div id="submit">
+                    <input type="Submit" class="btn btn-outline-dark " value="submit" [class.disabled]="!concern.valid">
+                </div>
+                <ng-template [ngIf]="submittedcon == true">
+                    <h5 style="text-align: center; margin-top: 3vh;">{{this.concern.value.fullname}} thx for your submission!</h5>
+                </ng-template>
+            </form>
+        </div>
+        <div id="subscribe">
+            <h3 style="text-align: center; margin-bottom: 3vh;"> Subscription Form</h3>
+            <form [formGroup]="subscribe" (ngSubmit)="printMessage()">
+                <div class="inputfield">
+                    <label for="firstname">First Name:&nbsp;&nbsp; </label>
+                    <input id="firstname" type="text" formControlName="firstname">
+                </div>
+                <div class="inputfield">
+                    <label for="lastname">Last Name:&nbsp;&nbsp; </label>
+                    <input id="lastname" type="text" formControlName="lastname">
+                </div>
+                <div class="inputfield">
+                    <label for="age">Age:&nbsp;&nbsp; </label>
+                    <input id="age" type="number" formControlName="age">
+                </div>
+                <div class="inputfield">
+                    <label for="adress">Adress:&nbsp;&nbsp; </label>
+                    <input id="adress" type="text" formControlName="adress">
+                </div>
+                <div class="inputfield">
+                    <label for="phonenumber">Phonenumber:&nbsp;&nbsp; </label>
+                    <input id="phonenumber" type="number" formControlName="phonenumber">
+                </div>
+                <div class="inputfield">
+                    <label for="emailadress">Email-Adress:&nbsp;&nbsp; </label>
+                    <input id="emailadress" type="text" formControlName="emailadress">
+                </div>
+                <div id="submit">
+                    <input type="Submit" class="btn btn-outline-dark " value="submit" [class.disabled]="!subscribe.valid">
+                </div>
+                <ng-template [ngIf]="submittedsub == true">
+                    <h5 style="text-align: center; margin-top: 3vh;">{{this.subscribe.value.firstname}} thx for your subscription</h5>
+                </ng-template>
+            </form>
+        </div>
+    </div>
+</div>
